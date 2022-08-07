@@ -21,16 +21,36 @@ list{
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 20px;
 }
 
+.country-info{
+  margin-left: 20px;
+}
+
+.country-list{
+  padding: 0px;
+  margin-left: 20px;
+}
 
 .list-item{
   display: flex;
-  border-color: aqua;
+  align-content: center;
+  list-style: none;
+  margin-bottom: 10px;
 }
-.small-title{
+
+.small-title, .title{
   display: block;
-  width: 300px;
-  border-color: aqua;
   margin: 0px;
+  margin-left: 10px;
+}
+
+.container{
+  display: flex;
+  align-content: center;
+}
+
+.text{
+  font-weight: 700;
 }
