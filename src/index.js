@@ -28,9 +28,7 @@ function onInputSearch(e){
 }
 
 function createHTML(data) {
-    console.log(data)
     if (data.length > 10) {
-
         Notify.info(`"Too many matches found. Please enter a more specific name."`);
     }
     else if (data.length > 1 && data.length <= 10) {
@@ -44,7 +42,6 @@ function createHTML(data) {
 
 function createList (data) {
     const list = data.reduce((acc, item) => acc + createItem(item), "")
-    console.log(data)
     countryList.insertAdjacentHTML("beforeend", list)
 }
 
@@ -55,7 +52,6 @@ function createCountryCard(data){
 
 function createItem(item) {
     const { name: { official }, flags: { svg, png } } = item;
-    console.log(png)
     return `<li class="list-item"><img width = 40, height = 30 class="small-flag" src="${png}" alt="flag"></img><h3 class="small-title">${official}</h3></li>`
 
 }
