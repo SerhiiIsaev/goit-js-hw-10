@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import "notiflix/dist/notiflix-3.2.5.min.css";
 const debounce = require('lodash.debounce');
-import './css/styles.css';
+
 import {getCountries} from './getcountries'
 
 const searchInput = document.querySelector('#search-box');
